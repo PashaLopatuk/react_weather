@@ -1,0 +1,41 @@
+.this__day_info {
+    position: relative;
+    padding: 40px;
+    max-width: 750px;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 2px 5px 25px -3px rgba(180, 180, 180, 0.25);
+    border-radius: 20px;
+}
+
+.item {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.item:not(:last-child) {
+    margin: 0 0 25px 0;
+}
+.item .indicator,
+ .indicator__name {
+    margin: 0 20px 0 0;
+}
+.item .indicator {
+    width: 38px;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    box-shadow: 1px 4px 10px -1px rgba(71, 147, 255, 0.2);
+    border-radius: 50%;
+}
+.item .indicator__name, .indicator__value {
+    font-size: 14px;
+    color: #939cb0;
+}
+.cloud__img {
+    position: absolute;
+    top: 0;
+    right: 0;
+}

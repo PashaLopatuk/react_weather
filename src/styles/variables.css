@@ -1,0 +1,17 @@
+.box_shadow_border {
+    box-shadow: 2px 5px 25px -3px rgba(180, 180, 180, 0.25);
+    border-radius: 20px;
+}
+.light__theme_box {
+    /* color: #000; */
+    background-color: #fff;
+}
+.light__theme_text {
+    color: #000;
+}
+.light__theme__primary_color {
+    color: #4793ff;
+}
+.light__theme__base_color {
+    color: #939cb0;
+}

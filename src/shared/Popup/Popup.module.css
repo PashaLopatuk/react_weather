@@ -1,0 +1,60 @@
+.popup {
+    position: fixed;
+    left: calc(50% - 375px);
+    top: 25%;
+    z-index: 50;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px;
+    max-width: 750px;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 2px 5px 25px -3px rgba(180, 180, 180, 0.25);
+    border-radius: 20px;
+}
+.blur {
+    position: fixed;
+    z-index: 40;
+    width: 100%;
+    height: 100vh;
+    background-color: #00000020;
+}
+.close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+.close svg {
+    transition: .3s;
+}
+.close:hover svg {
+    transform: rotate(360deg);
+}
+
+.day {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.day .day__temp {
+    font-weight: 500;
+    font-size: 60px;
+    line-height: 73px;
+    color: #4793ff;
+}
+.day .day__name {
+    font-size: 25px;
+    line-height: 30px;
+    color: #000000;
+}
+.day .img svg {
+    height: 53px;
+    width: 53px;
+}
+.day .day__time,
+.day__city {
+    font-size: 15px;
+    color: #999;
+}
