@@ -137,7 +137,7 @@ const Header: React.FC<Props> = ({ setCity, citiesList, setCitiesList}) => {
         <div className={s.logo}>
           <GlobalSvgSelector id={'header-logo'} />
         </div>
-        <div className={s.title}>{city.label}, {
+        <div className={s.title}>{city.label}{city.label !== '' ? ',': ''} {
           getCountry(city, countryOptions)
         }</div>
       </div>

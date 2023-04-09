@@ -7,7 +7,6 @@ import Popup from './shared/Popup/Popup';
 import { City } from './store/types/types';
 import Settings from './pages/Settings/Settings';
 
-
 function App() {
   const items = [
     {
@@ -47,7 +46,7 @@ const [citiesList, setCitiesList]: [City[], React.Dispatch<React.SetStateAction<
     // { value: 'rivne', label: 'Rivne' }
 ])
 
-  console.log('App started: ', city.value)
+  // console.log('App started: ', city.value)
 
   return (
     <div className={'wrapper'}>

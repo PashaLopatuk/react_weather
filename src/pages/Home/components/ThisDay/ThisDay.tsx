@@ -51,7 +51,7 @@ const getHours = (timeZone: number) => {
 }
 
 const ThisDay = ({ weather }: Props, {city}: Props) => {
-  console.log('Thisday: ', city !== undefined ? city.label : '')
+  // console.log('Thisday: ', city !== undefined ? city.label : '')
   return (
     <div className={s.this__day}>
       <div className={s.top__block}>
