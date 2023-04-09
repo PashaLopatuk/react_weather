@@ -26,14 +26,15 @@ const Home = (props: Props) => {
     dispatch(fetchCurrentWeather(city.value))
   }, [city.value])
 
+  console.log(city.label)
 
   return (
     <div className={s.home}>
         <div className={s.wrapper}>
-          <ThisDay weather={weather} cityName={city.label} />
-          <ThisDayInfo />
+          <ThisDay weather={weather} city={city} />
+          <ThisDayInfo weather={weather}/>
         </div>
-        <Days/>
+        {/* <Days/> */}
     </div>
   )
 }

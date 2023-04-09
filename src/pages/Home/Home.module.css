@@ -4,4 +4,22 @@
 .wrapper {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+
+}
+.wrapper> *:hover{
+    box-shadow: 2px 5px 25px 0px rgba(180, 180, 180, 0.4);
+}
+
+@media (max-width: 1250px) {
+    .wrapper {
+        flex-direction: column;
+        gap: 30px;
+        align-items: start;
+        padding: 0 10px;
+    }
+    .wrapper > * {
+        max-width: none;
+    }
+    
 }
