@@ -2,7 +2,7 @@
   "name": "weather",
   "version": "0.1.0",
   "private": true,
-  "homepage" : "http://pashalopatuk.github.io/react_weather",
+  "homepage": "http://pashalopatuk.github.io/react_weather",
   "dependencies": {
     "@reduxjs/toolkit": "^1.9.3",
     "@testing-library/jest-dom": "^5.16.5",
@@ -29,6 +29,8 @@
   "scripts": {
     "start": "react-scripts --openssl-legacy-provider start",
     "build": "react-scripts --openssl-legacy-provider build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -52,5 +54,8 @@
   },
   "optionalDependencies": {
     "fsevents": "2.2"
+  },
+  "devDependencies": {
+    "gh-pages": "^5.0.0"
   }
 }
