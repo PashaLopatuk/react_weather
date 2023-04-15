@@ -34,6 +34,10 @@
     font-size: 14px;
     color: #939cb0;
 }
+.item .indicator__value {
+    font-weight: 600;
+    color: #222;
+}
 .cloud__img {
     position: absolute;
     top: 0;

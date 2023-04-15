@@ -73,7 +73,7 @@ const ThisDay = ({ weather }: Props, {city}: Props) => {
         </div>
         <div className={s.this__city}>
           Local time: 
-           <span>{
+           <span> {
             getHours(weather.timezone)   
             // new Date().getDate().toString().length === 2 ? new Date().getDate().toString() : '0'.concat(new Date().getDate().toString())
           }:{
