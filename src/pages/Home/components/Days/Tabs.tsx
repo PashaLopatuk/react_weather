@@ -1,7 +1,7 @@
 import React from 'react'
 import s from './Days.module.css'
 
-interface Props {}
+
 
 const Tabs = () => {
   const tabs = [

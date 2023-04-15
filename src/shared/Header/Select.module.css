@@ -1,0 +1,7 @@
+.select {
+    background-color: rgba(71, 147, 255, 0.2);
+    width: 194px;
+    height: 37px;
+    border-radius: 10px;
+    z-index: 100;
+}

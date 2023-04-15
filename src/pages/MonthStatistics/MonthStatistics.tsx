@@ -1,10 +1,6 @@
 import React from 'react';
 
-import s from './MonthStatistics.module.css'
-
-interface Props {}
-
-const MonthStatistics = (props: Props) => {
+const MonthStatistics = () => {
   return (
     <div>
       Month Statistics

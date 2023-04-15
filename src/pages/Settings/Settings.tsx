@@ -8,7 +8,7 @@ interface Props {
     setCitiesList: React.Dispatch<React.SetStateAction<City[]>>;
   }
 
-const Settings = ({citiesList, setCitiesList} : Props) => {
+const Settings = ({citiesList} : Props) => {
 
   return (
     <div>
@@ -19,9 +19,9 @@ const Settings = ({citiesList, setCitiesList} : Props) => {
         </button>
       </div>
       <ul className={s.citiesList}>{
-        citiesList.map( (city: City) => (
-            <li className={s.city_case}>
-                
+        citiesList.map( () => (
+            <li className={s.city_case} key={""}>
+                City
             </li>
         ))
         }

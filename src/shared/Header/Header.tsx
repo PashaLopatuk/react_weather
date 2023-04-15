@@ -3,13 +3,19 @@ import s from './Header.module.css';
 import GlobalSvgSelector from '../../assets/icons/global/GlobalSvgSelector';
 import Select from 'react-select';
 import { City } from '../../store/types/types';
-import { Link } from 'react-router-dom';
+// import { Style } from 'util';
+import styleSelect from './Select.module.css'
 
 interface Props {
   setCity: React.Dispatch<React.SetStateAction<City>>;
-  citiesList: City[];
-  setCitiesList: React.Dispatch<React.SetStateAction<City[]>>;
+  // citiesList: City[];
+  // setCitiesList: React.Dispatch<React.SetStateAction<City[]>>;
 }
+
+// type Style = {
+//   label: string,
+//   value: string,
+// }
 
 interface CountryOption {
   value: string;
@@ -17,7 +23,7 @@ interface CountryOption {
   country: string;
 }
 
-const Header: React.FC<Props> = ({ setCity, citiesList, setCitiesList}) => {
+const Header: React.FC<Props> = ({ setCity }) => {
   const [city, setCityValue] = useState<City>({
     value: '',
     label: '',
@@ -127,8 +133,8 @@ const Header: React.FC<Props> = ({ setCity, citiesList, setCitiesList}) => {
       width: '194px',
       height: '37px',
       borderRadius: '10px',
-      zIndex: 100
-    })
+      zIndex: '100'
+      })
   };
 
   return (

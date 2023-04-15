@@ -3,8 +3,6 @@ import s from './Days.module.css'
 import Card from './Card'
 import Tabs from './Tabs'
 
-interface Props {}
-
 export interface Day {
     name: string,
     date: string,

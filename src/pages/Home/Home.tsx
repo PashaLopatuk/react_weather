@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from 'react';
-import Days from './components/Days/Days';
+import React, { useEffect } from 'react';
+// import Days from './components/Days/Days';
 import ThisDay from './components/ThisDay/ThisDay';
 import ThisDayInfo from './components/ThisDayInfo/ThisDayInfo';
 import s from './Home.module.css';
